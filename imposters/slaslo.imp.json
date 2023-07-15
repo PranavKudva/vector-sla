@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+        "method": "GET",
+        "endpoint": "/success"
+    },
+    "response": {
+        "status": 201,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": "{\"errors\":\"none\"}"
+    }
+  },
+  {
+      "request": {
+          "method": "GET",
+          "endpoint": "/failure"
+      },
+      "response": {
+          "status": 500,
+          "headers": {
+              "Content-Type": "application/json"
+          },
+          "body": "{\"errors\":\"internal server error\"}"
+      }
+  }
+]
